@@ -29,13 +29,12 @@ import PackageDescription
 
 let package = Package(
     name: "EFQRCode",
-    platforms: [.iOS(.v8), .macOS(.v10_11), .tvOS(.v9), .watchOS(.v2)],
     products: [
         .library(name: "EFQRCode", targets: ["EFQRCode"])
     ],
     dependencies: [
         .package(url: "https://github.com/ApolloZhu/swift_qrcodejs.git",
-                 .upToNextMinor(from: "1.1.2"))
+                 .upToNextMinor(from: "1.1.4"))
     ],
     targets: [
         .target(name: "EFQRCode",
